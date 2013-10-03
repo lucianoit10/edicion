@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="edicion_view_form">
+            <field name="model">edicion.edicion</field>
+            <field name="type">form</field>
+            <field name="name">edicion_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="public_view_form">
+            <field name="model">edicion.publicacion</field>
+            <field name="type">form</field>
+            <field name="name">public_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="edicion_view_tree">
+            <field name="model">edicion.edicion</field>
+            <field name="type">tree</field>
+            <field name="name">edicion_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="public_view_tree">
+            <field name="model">edicion.publicacion</field>
+            <field name="type">tree</field>
+            <field name="name">public_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_edicion_form">
+            <field name="name">Edicion</field>
+            <field name="res_model">edicion.edicion</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_public_form">
+            <field name="name">Publicacion</field>
+            <field name="res_model">edicion.publicacion</field>
+        </record>
+
+        <menuitem name="Edicion" sequence="0" id="menu_edicion" />
+        <menuitem parent="menu_edicion" sequence="1" action="act_edicion_form" icon="tryton-list" id="menu_edicion_form"/>
+        <menuitem parent="menu_edicion" sequence="2" action="act_public_form" icon="tryton-list" id="menu_public_form"/>
+    </data>
+</tryton>

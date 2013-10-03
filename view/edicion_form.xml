@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<form string="Edicion">
+    <label name="fecha"/>
+    <field name="fecha"/>
+    <label name="cant_hojas"/>
+    <field name="cant_hojas"/>
+    <newline/>
+    <field name="publicaciones" colspan="4"/>
+</form>

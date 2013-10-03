@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<tree string='Publicacion'>
+    <field name='cliente'/>
+    <field name='tipo'/>
+    <field name='producto'/>
+    <field name='ubicacion'/>
+    <field name='medidas'/>
+    <field name='fecha'/>
+    <field name='decrip'/>
+    <field name='esta_publicada'/>
+</tree>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<form string="Publicacion" col="5">
+    <label name="cliente"/>
+    <field name="cliente"/>
+    <label name="ubicacion"/>
+    <field name="ubicacion"/>
+    <newline/>
+    <label name="producto"/>
+    <field name="producto"/>
+    <label name="medidas"/>
+    <field name="medidas"/>
+    <newline/>
+    <label name="edicion"/>
+    <field name="edicion"/>
+    <label name="tipo"/>
+    <field name="tipo"/>
+    <newline/>
+    <separator xexpand="0" colspan="3"/>
+    <label name="esta_publicada" string="¿ESTA PUBLICADA?" xexpand="0"/>
+    <field name="esta_publicada" xexpand="0"/>
+    <newline/>
+    <label name="decrip"/>
+    <field name="decrip" colspan="5"/>
+</form>
