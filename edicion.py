@@ -10,6 +10,14 @@ class Edicion(ModelSQL,ModelView):
     cant_hojas = fields.Integer('CANTIDAD DE HOJAS')
     publicaciones = fields.One2Many('edicion.publicacion', 'edicion', 'PUBLICACIONES')
 
+    @classmethod
+    def __setup__(cls):
+        super(Edicion, cls).__setup__()
+        cls._sql_constraints = [
+            ('edicion_fecha', 'UNIQUE(fecha)',
+                'no se pueden crear 2 ediciones con la misma fecha'),
+            ]
+
 class Publicacion(ModelSQL,ModelView):
     'Publicacion'
     __name__ = 'edicion.publicacion'
