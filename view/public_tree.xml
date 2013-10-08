@@ -6,6 +6,6 @@
     <field name='ubicacion'/>
     <field name='medidas'/>
     <field name='fecha'/>
-    <field name='decrip'/>
+    <field name='descrip'/>
     <field name='esta_publicada'/>
 </tree>

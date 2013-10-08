@@ -5,4 +5,6 @@ def register():
      Pool.register(
         Edicion,
         Publicacion,
+        EdicionPresupuestado,
+        PublicacionPresupuestado,
         module='edicion', type_='model')
