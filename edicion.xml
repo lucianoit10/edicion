@@ -35,6 +35,41 @@
             <field name="res_model">edicion.publicacion</field>
         </record>
 
+        <!-- wizard -->
+        <record model='ir.ui.view' id='comenzar_form'>
+            <field name='model'>edicion.info</field>
+            <field name='type'>form</field>
+            <field name='name'>comenzar_form</field>
+        </record>
+        <!-- wizard -->
+        <record model='ir.ui.view' id='finalizar_form'>
+            <field name='model'>edicion.info</field>
+            <field name='type'>form</field>
+            <field name='name'>finalizar_form</field>
+        </record>
+        <!-- wizard -->
+        <record model="ir.action.wizard" id="actualizar_edicion">
+            <field name="name">Actualizacion De Ediciones Y Publicaciones</field>
+            <field name="wiz_name">edicion.actualizar_wizard</field>
+            <field name='model'>edicion.edicion</field>
+        </record>
+        <record model="ir.action.wizard" id="actualizar_publicacion">
+            <field name="name">Actualizacion De Ediciones Y Publicaciones</field>
+            <field name="wiz_name">edicion.actualizar_wizard</field>
+            <field name='model'>edicion.publicacion</field>
+        </record>
+        <!-- keyword -->
+        <record model="ir.action.keyword" id="act_open_wizard_edicion_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">edicion.edicion,-1</field>
+            <field name="action" ref="actualizar_edicion"/>
+        </record>
+        <!-- keyword -->
+        <record model="ir.action.keyword" id="act_open_wizard_publicaicon_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">edicion.publicacion,-1</field>
+            <field name="action" ref="actualizar_publicacion"/>
+        </record>
         <menuitem name="Edicion" sequence="0" id="menu_edicion" />
         <menuitem parent="menu_edicion" sequence="1" action="act_edicion_form" icon="tryton-list" id="menu_edicion_form"/>
         <menuitem parent="menu_edicion" sequence="2" action="act_public_form" icon="tryton-list" id="menu_public_form"/>

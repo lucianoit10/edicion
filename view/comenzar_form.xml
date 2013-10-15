@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<form string="Actualizar">
+    <label name="texto" string='ACTUALIZAR LAS PUBLICACIONES Y LAS EDICIONES'/>
+</form>
